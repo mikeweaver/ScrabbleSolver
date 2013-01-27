@@ -5,7 +5,7 @@ import java.util.*;
 public class AnagramService
 {
     Dictionary dictionary;
-    ExecutorService threadPool;
+    ExecutorService threadPool;jj
     
     public AnagramService( Dictionary dictionary )
     {

@@ -1,0 +1,28 @@
+<html>
+<head><title>Scrabble Word Finder</title>
+<link rel="stylesheet" href="/css/colorbox.css" />
+<link rel="stylesheet" href="/css/ScrabbleSolver.css" />
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.colorbox.js"></script>
+<script src="/js/json2.js"></script>
+<script src="/js/ScrabbleSolver.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+<form method="POST"/>
+<div class="letterInput">
+Letters: <input id="characters" type="text" maxLength="10" size="20" onkeyup="scheduleSearch();" autocomplete="off" class="inputText"/><input type="button" value="Get Words" onClick="searchNow();" class="inputButton"/>
+</div>
+<div class="letterInput">
+Begins With: <input id="beginsWith" type="text" maxLength="3" size="4" onkeyup="scheduleSearch();" autocomplete="off" class="inputText"/>&nbsp;
+Contains: <input id="contains" type="text" maxLength="3" size="4" onkeyup="scheduleSearch();" autocomplete="off" class="inputText"/>&nbsp;
+Ends With:  <input id="endsWith" type="text" maxLength="3" size="4" onkeyup="scheduleSearch();" autocomplete="off" class="inputText"/>
+</div>
+</form>
+<div id="results" class="results">
+</div>
+
+</body>
+</html>
